@@ -8,6 +8,10 @@ packages:
   gitUsername: join-ibm
   gitBranch: main
 services:
+- serviceName: project.es_join_git_fibonacci.integrations:Fibonacci
+  packages:
+  - name: ES_JOIN_GIT_FibonacciProject
+    version: "1.0"
 - serviceName: project.es_join_git_fibonacci.integrations:getElementArray
   packages:
   - name: ES_JOIN_GIT_FibonacciProject
@@ -17,6 +21,22 @@ services:
   - name: WmPublic
     version: 11.1.0.0.2090
 - serviceName: pub.flow:clearPipeline
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2090
+- serviceName: pub.list:appendToStringList
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2090
+- serviceName: pub.json:documentToJSONString
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2090
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2090
+- serviceName: pub.flow:getLastFailureCaught
   packages:
   - name: WmPublic
     version: 11.1.0.0.2090
